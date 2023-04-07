@@ -5,6 +5,7 @@ The goal of this project was to create a news search in a completely reactive wa
 
 ## Installation
 To get started with the project, simply clone the repository and run the following command to install the dependencies: `npm install`
+
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
 ## Features
