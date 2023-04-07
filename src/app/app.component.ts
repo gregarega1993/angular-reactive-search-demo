@@ -14,7 +14,7 @@ import { AppStore } from './app.store';
     <label>Search: </label>
     <input type="search" [formControl]="searchControl" />
     <ng-container *ngIf="vm$ | async as vm">
-      <p *ngIf="vm.articlesError">
+      <p data-testid="articleError" *ngIf="vm.articlesError">
         {{ vm.articlesError }}
       </p>
       <ul>
