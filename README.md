@@ -1,27 +1,29 @@
-# AngularReactiveSearchDemo
+# Angular Reactive Search Demo 🚀
+Welcome to my Angular Reactive Search Demo project! 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+The goal of this project was to create a news search in a completely reactive way, without the use of manual subscriptions. The project relies on Angular, RxJS, and NgRx Component Store, handles errors, uses trackBy to update only those items in the DOM that have changed, and uses debounce to avoid sending a request on every keystroke.
 
-## Development server
+##Installation
+To get started with the project, simply clone the repository and run the following command to install the dependencies: `npm install`
+Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+##Features
+- Reactive search using NgRx Component Store
+- Error handling
+- trackBy to optimize rendering performance
+- Debouncing to avoid sending a request on every keystroke
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Technologies Used
+- Angular
+- RxJS
+- NgRx component store
 
-## Build
+##Contributing
+Contributions are always welcome! If you'd like to contribute, please fork the repository and create a new branch for your changes. Once you're done, submit a pull request and I'll review your changes. 🤝
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##Credits
+This project was created by Gregor Ajdič. 👨‍💻
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##License
+This project is licensed under the MIT license. 📝
