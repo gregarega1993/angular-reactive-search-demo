@@ -30,7 +30,7 @@ To run E2E tests run `ng e2e` command.
 Contributions are always welcome! If you'd like to contribute, please fork the repository and create a new branch for your changes. Once you're done, submit a pull request and I'll review your changes.
 
 ## Credits 👨‍
-This project was created by Gregor Ajdič. 👨‍💻
+This project was created by Gregor Ajdič.
 
 ## License 📝
 This project is licensed under the MIT license.
