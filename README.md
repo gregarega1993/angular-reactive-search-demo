@@ -18,7 +18,6 @@ To run E2E tests run `ng e2e` command.
 - trackBy to optimize rendering performance
 - Debouncing to avoid sending a request on every keystroke
 
-
 ## Technologies Used
 - Angular
 - RxJS
