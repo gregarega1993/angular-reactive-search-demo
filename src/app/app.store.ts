@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ComponentStore } from '@ngrx/component-store';
+import { ComponentStore, tapResponse } from '@ngrx/component-store';
 import { Article } from './interfaces/news.interface';
 import { NewsApiService } from './services/news-api.service';
 import {
@@ -10,6 +10,7 @@ import {
   switchMap,
   tap,
 } from 'rxjs';
+import { HttpErrorResponse } from '@angular/common/http';
 
 export interface AppState {
   articles: Article[];
@@ -35,13 +36,11 @@ export class AppStore extends ComponentStore<AppState> {
           return EMPTY;
         } else {
           return this.newsApiService.getArticles$(searchQuery).pipe(
-            tap({
-              next: (articles) =>
-                this.patchState({ articles, articlesError: null }),
-              error: (articlesError) =>
-                this.patchState({ articles: [], articlesError }),
-            }),
-            catchError(() => EMPTY)
+            tapResponse(
+              (articles) => this.patchState({ articles, articlesError: null }),
+              (error: HttpErrorResponse) =>
+                this.patchState({ articles: [], articlesError: error.message })
+            )
           );
         }
       })

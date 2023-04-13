@@ -31,7 +31,7 @@ describe('Search', () => {
       cy.get('ul li').should('have.length', 0);
       cy.get('[data-testid="articleError"]').should(
         'have.text',
-        ' Error: Something bad happened; please try again later. '
+        ' Something bad happened; please try again later. '
       );
     });
   });
