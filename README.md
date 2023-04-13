@@ -12,13 +12,13 @@ To run unit tests run `ng test` command.
 
 To run E2E tests run `ng e2e` command.
 
-## Features
+## Features ⭐️
 - Reactive search using NgRx Component Store
 - Error handling
 - trackBy to optimize rendering performance
 - Debouncing to avoid sending a request on every keystroke
 
-## Technologies Used
+## Technologies Used 🛠️
 - Angular
 - RxJS
 - NgRx component store,
@@ -26,11 +26,11 @@ To run E2E tests run `ng e2e` command.
 - Karma
 - Jasmine
 
-## Contributing
-Contributions are always welcome! If you'd like to contribute, please fork the repository and create a new branch for your changes. Once you're done, submit a pull request and I'll review your changes. 🤝
+## Contributing 🤝
+Contributions are always welcome! If you'd like to contribute, please fork the repository and create a new branch for your changes. Once you're done, submit a pull request and I'll review your changes.
 
-## Credits
+## Credits 👨‍
 This project was created by Gregor Ajdič. 👨‍💻
 
-## License
-This project is licensed under the MIT license. 📝
+## License 📝
+This project is licensed under the MIT license.
